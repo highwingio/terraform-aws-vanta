@@ -13,6 +13,7 @@ data "aws_iam_policy_document" "vanta_additional_permissions" {
       "ecr:DescribeImages",
       "dynamodb:ListTagsOfResource",
       "ecr:ListTagsForResource",
+      "kms:ListResourceTags",
       "sqs:ListQueueTags"
     ]
     resources = ["*"]
